@@ -64,7 +64,7 @@ nav ul li:hover{
     width: 395px;
     height: 210px;
     padding: 10px;
-    animation: from-top 1s ease;
+    animation: from-top 1s ;
 }
 .Quienes{
   display: flex;
@@ -226,7 +226,7 @@ footer {
     rgba(0, 0, 0, 0.7),
     rgb(187, 232, 105)
   );
-  height: 120px;
+  height: 100px;
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
 }
