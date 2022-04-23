@@ -1,0 +1,638 @@
+body{
+    background-image: url(./imagenes/fondo.png);
+    background-size: cover;
+    font-family: "Fredoka", sans-serif;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    }
+header{
+        width: 100%;
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.6),
+          rgb(255, 255, 255));
+        height: 140px;
+        text-transform: uppercase;
+        font-family: "Fredoka", sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        color: black;
+
+        nav ul li{
+            padding: 8px;
+            transition: all 0.5s;
+          }
+          nav ul li:hover{
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9), 0 0 20px rgb(0, 0, 0);
+            outline-color: rgb(0, 0, 0);
+            text-shadow: 1px 1px 4px rgb(255, 255, 255);
+            border-radius: 90px;
+          }
+    }
+.Inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .Img-inicio{
+            width: 350px;
+            height: 350px;
+            animation: from-top 1.5s ease;
+          }
+          .Texto__Inicio{
+              width: 350px;
+              height: 160px;
+              padding: 10px;
+              background-color: rgba(0, 0, 0, 0.8);
+              border-radius: 6px;
+              text-transform: initial;
+              animation: from-top 1.5s ease;
+              color: white;
+              font-family: "Fredoka", sans-serif;
+          }
+          @keyframes from-top {
+            0% {
+              opacity: 0;
+              transform: translateY(90px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0px);
+            }
+          }
+          .Cupones-inicio{
+            width: 395px;
+            height: 210px;
+            padding: 10px;
+            animation: from-top 1s ;
+        }
+      }
+      .Quienes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Img-QS{
+            width: 350px;
+            height: 350px;
+            animation: from-top 1.5s ease;
+          }
+
+        .Texto__QS{
+            width: 350px;
+            height: 330px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 6px;
+            font-family: "Fredoka", sans-serif;
+            text-transform: initial;
+            animation: from-top 2s ease;
+            color: white;
+            margin-bottom: 30px;
+        }
+      }
+      .Nvalores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Texto__valores{
+            width: 430px;
+            height: 230px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 6px;
+            font-family: "Fredoka", sans-serif;
+            text-transform: initial;
+            animation: from-bottom 2s ease;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          @keyframes from-bottom {
+            0% {
+              opacity: 0;
+              transform: translateY(90px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0px);
+            }
+          }
+          .Img-valores{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 12px;
+          }
+
+      }
+      .Ingreso{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Form-ingreso{
+            width: 350px;
+            height: 230px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 6px;
+            font-family: "Fredoka", sans-serif;
+            text-transform: initial;
+            animation: from-top 2s ease;
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+      }
+      .Registro{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Form-Registro{
+            width: 380px;
+            height: 530px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 6px;
+            font-family: "Fredoka", sans-serif;
+            text-transform: initial;
+            animation: from-top 2s ease;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+      }
+      .Funcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Video{
+            width: 270px;
+            height: 420px;
+            animation: from-right 1s ease;
+            margin-top: 25px;
+            margin-bottom: 15px;
+          }
+          .Texto-Funciones{
+            width: 380px;
+            height: 380px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Fredoka", sans-serif;
+            margin-top: 15px;
+            margin-bottom: 25px;
+          }
+      }
+      .Ayuda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+        .Texto__ayuda{
+            width: 380px;
+            height: 300px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Fredoka", sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+      }
+      footer {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);  
+        width: 100%;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.7),
+          rgb(255, 255, 255)
+        );
+        height: 120px;
+        font-family: "Fredoka", sans-serif;
+        font-size: 14px;
+
+        .Redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            color: black;
+          }
+          .Redes-Img{
+            width: 35px;
+            height: 35px;
+          }
+      }
+      @media (min-width: 768px){
+        .Inicio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .Img-inicio{
+                width: 400px;
+                height: 400px;
+              }
+              .Texto__Inicio{
+                  width: 650px;
+                  height: 130px;
+                  padding: 10px;
+                  background-color: rgba(0, 0, 0, 0.8);
+                  border-radius: 6px;
+                  text-transform: initial;
+                  animation: from-top 2s ease;
+                  color: white;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+              }
+              .Cupones-inicio{
+                  width: 700px;
+                  height: 300px;
+                  padding: 10px;
+              }
+          }
+          .Quienes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .Img-QS{
+                width: 400px;
+                height: 400px;
+                animation: from-top 1.5s ease;
+              }
+
+            .Texto__QS{
+                width: 700px;
+                height: 210px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Nvalores{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+            .Texto__valores{
+                width: 400px;
+                height: 230px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: small;
+              }
+              .Img-valores{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+              }
+          }
+          .Ingreso{
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .Form-ingreso{
+                width: 700px;
+                height: 230px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Registro{
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .Form-Registro{
+                width: 550px;
+                height: 530px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Funcion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .Video{
+                width: 270px;
+                height: 420px;
+                animation: from-right 1s ease;
+                margin-top: 25px;
+                margin-bottom: 15px;
+              }
+              .Texto-Funciones{
+                width: 800px;
+                height: 290px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: "Fredoka", sans-serif;
+                margin-top: 15px;
+                margin-bottom: 25px;
+              }
+          }
+          .Ayuda{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            .Texto__ayuda{
+                width: 800px;
+                height: 300px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: "Fredoka", sans-serif;
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+          }
+      }
+      @media (min-width: 1200px){
+        .Inicio{
+            height: 600px;
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+
+            .Img-inicio{
+                width: 400px;
+                height: 400px;
+              }
+              .Texto__Inicio{
+                  width: 400px;
+                  height: 180px;
+                  padding: 10px;
+                  background-color: rgba(0, 0, 0, 0.8);
+                  border-radius: 6px;
+                  text-transform: initial;
+                  animation: from-top 2s ease;
+                  color: white;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+              }
+              .Cupones-inicio{
+                  width: 500px;
+                  height: 250px;
+                  padding: 10px;
+              }
+        }
+        .Quienes{
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+            .Img-QS{
+                width: 500px;
+                height: 500px;
+                animation: from-top 1.5s ease;
+              }
+
+            .Texto__QS{
+                width: 600px;
+                height: 250px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Nvalores{
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            .Texto__valores{
+                width: 500px;
+                height: 250px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: small;
+              }
+              .Img-valores{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 12px;
+              }
+          }
+          .Ingreso{
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .Form-ingreso{
+                width: 700px;
+                height: 230px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Registro{
+            height: 660px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .Form-Registro{
+                width: 550px;
+                height: 530px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 6px;
+                font-family: "Fredoka", sans-serif;
+                text-transform: initial;
+                animation: from-top 2s ease;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+          }
+          .Funcion{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+            .Video{
+                width: 270px;
+                height: 420px;
+                animation: from-right 1s ease;
+                margin-top: 50px;
+                margin-bottom: 50px;
+              }
+              .Texto-Funciones{
+                width: 600px;
+                height: 290px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: "Fredoka", sans-serif;
+                margin-top: 15px;
+                margin-bottom: 25px;
+              }
+          }
+          .Ayuda{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            .Texto__ayuda{
+                width: 600px;
+                height: 230px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                border-radius: 6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: "Fredoka", sans-serif;
+                font-size: small;
+              }
+          }
+      }

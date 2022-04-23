@@ -1,54 +1,53 @@
-body{
-background-image: url(./imagenes/fondo.jpg);
-background-size: cover;
-font-family: "Fredoka", sans-serif;
-background-repeat: no-repeat;
-overflow-x: hidden;
+body {
+  background-image: url(./imagenes/fondo.png);
+  background-size: cover;
+  font-family: "Fredoka", sans-serif;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
-header{
-    width: 100%;
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.6),
-      rgb(255, 255, 255));
-    height: 140px;
-    text-transform: uppercase;
-    font-family: "Fredoka", sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    color: black;
+
+header {
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgb(255, 255, 255));
+  height: 140px;
+  text-transform: uppercase;
+  font-family: "Fredoka", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
 }
-nav ul li{
+header nav ul li {
   padding: 8px;
   transition: all 0.5s;
 }
-nav ul li:hover{
+header nav ul li:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9), 0 0 20px rgb(0, 0, 0);
   outline-color: rgb(0, 0, 0);
   text-shadow: 1px 1px 4px rgb(255, 255, 255);
   border-radius: 90px;
 }
-.Inicio{
+
+.Inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Img-inicio{
+.Inicio .Img-inicio {
   width: 350px;
   height: 350px;
   animation: from-top 1.5s ease;
 }
-.Texto__Inicio{
-    width: 350px;
-    height: 160px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    text-transform: initial;
-    animation: from-top 1.5s ease;
-    color: white;
-    font-family: "Fredoka", sans-serif;
+.Inicio .Texto__Inicio {
+  width: 350px;
+  height: 160px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  text-transform: initial;
+  animation: from-top 1.5s ease;
+  color: white;
+  font-family: "Fredoka", sans-serif;
 }
 @keyframes from-top {
   0% {
@@ -60,35 +59,42 @@ nav ul li:hover{
     transform: translateY(0px);
   }
 }
-.Cupones-inicio{
-    width: 395px;
-    height: 210px;
-    padding: 10px;
-    animation: from-top 1s ;
+.Inicio .Cupones-inicio {
+  width: 395px;
+  height: 210px;
+  padding: 10px;
+  animation: from-top 1s;
 }
-.Quienes{
+
+.Quienes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Texto__QS{
-    width: 350px;
-    height: 330px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
-    text-transform: initial;
-    animation: from-top 2s ease;
-    color: white;
-    margin-bottom: 30px;
+.Quienes .Img-QS {
+  width: 350px;
+  height: 350px;
+  animation: from-top 1.5s ease;
 }
-.Nvalores{
+.Quienes .Texto__QS {
+  width: 350px;
+  height: 330px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  font-family: "Fredoka", sans-serif;
+  text-transform: initial;
+  animation: from-top 2s ease;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.Nvalores {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Texto__valores{
+.Nvalores .Texto__valores {
   width: 430px;
   height: 230px;
   padding: 10px;
@@ -115,19 +121,20 @@ nav ul li:hover{
     transform: translateY(0px);
   }
 }
-.Img-valores{
+.Nvalores .Img-valores {
   width: 80px;
   height: 80px;
   margin-bottom: 12px;
 }
-.Ingreso{
+
+.Ingreso {
   height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.Form-ingreso{
+.Ingreso .Form-ingreso {
   width: 350px;
   height: 230px;
   padding: 10px;
@@ -144,14 +151,15 @@ nav ul li:hover{
   align-items: center;
   justify-content: center;
 }
-.Registro{
+
+.Registro {
   height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.Form-Registro{
+.Registro .Form-Registro {
   width: 380px;
   height: 530px;
   padding: 10px;
@@ -166,19 +174,20 @@ nav ul li:hover{
   align-items: center;
   justify-content: center;
 }
-.Funcion{
+
+.Funcion {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Video{
+.Funcion .Video {
   width: 270px;
   height: 420px;
   animation: from-right 1s ease;
   margin-top: 25px;
   margin-bottom: 15px;
 }
-.Texto-Funciones{
+.Funcion .Texto-Funciones {
   width: 380px;
   height: 380px;
   padding: 10px;
@@ -193,14 +202,15 @@ nav ul li:hover{
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.Ayuda{
+
+.Ayuda {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.Texto__ayuda{
+.Ayuda .Texto__ayuda {
   width: 380px;
   height: 300px;
   padding: 10px;
@@ -215,62 +225,71 @@ nav ul li:hover{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 footer {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);  
+  grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgb(255, 255, 255)
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgb(255, 255, 255));
   height: 120px;
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
 }
-.Redes{
+footer .Redes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   color: black;
 }
-.Redes-Img{
+footer .Redes-Img {
   width: 35px;
   height: 35px;
 }
-@media (min-width: 768px){
-  .Inicio{
+
+@media (min-width: 768px) {
+  .Inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .Img-inicio{
+  .Inicio .Img-inicio {
     width: 400px;
     height: 400px;
   }
-  .Texto__Inicio{
-      width: 650px;
-      height: 130px;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 6px;
-      text-transform: initial;
-      animation: from-top 2s ease;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .Inicio .Texto__Inicio {
+    width: 650px;
+    height: 130px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    text-transform: initial;
+    animation: from-top 2s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .Cupones-inicio{
-      width: 700px;
-      height: 300px;
-      padding: 10px;
+  .Inicio .Cupones-inicio {
+    width: 700px;
+    height: 300px;
+    padding: 10px;
   }
-  .Texto__QS{
+
+  .Quienes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Quienes .Img-QS {
+    width: 400px;
+    height: 400px;
+    animation: from-top 1.5s ease;
+  }
+  .Quienes .Texto__QS {
     width: 700px;
     height: 210px;
     padding: 10px;
@@ -286,13 +305,14 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Nvalores{
+
+  .Nvalores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-  .Texto__valores{
-    width: 250px;
+  .Nvalores .Texto__valores {
+    width: 400px;
     height: 230px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -307,20 +327,22 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: small;
   }
-  .Img-valores{
+  .Nvalores .Img-valores {
     width: 80px;
     height: 80px;
     margin-bottom: 12px;
   }
-  .Ingreso{
+
+  .Ingreso {
     height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .Form-ingreso{
+  .Ingreso .Form-ingreso {
     width: 700px;
     height: 230px;
     padding: 10px;
@@ -337,14 +359,15 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Registro{
+
+  .Registro {
     height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .Form-Registro{
+  .Registro .Form-Registro {
     width: 550px;
     height: 530px;
     padding: 10px;
@@ -359,15 +382,21 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Video{
+
+  .Funcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Funcion .Video {
     width: 270px;
     height: 420px;
     animation: from-right 1s ease;
     margin-top: 25px;
     margin-bottom: 15px;
   }
-  .Texto-Funciones{
-    width: 700px;
+  .Funcion .Texto-Funciones {
+    width: 800px;
     height: 290px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -381,15 +410,16 @@ footer {
     margin-top: 15px;
     margin-bottom: 25px;
   }
-  .Ayuda{
+
+  .Ayuda {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .Texto__ayuda{
-    width: 700px;
+  .Ayuda .Texto__ayuda {
+    width: 800px;
     height: 300px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -403,45 +433,51 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
 }
-@media (min-width: 1200px){
-  .Inicio{
+@media (min-width: 1200px) {
+  .Inicio {
+    height: 600px;
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
   }
-  .Img-inicio{
+  .Inicio .Img-inicio {
     width: 400px;
     height: 400px;
   }
-  .Texto__Inicio{
-      width: 400px;
-      height: 180px;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-radius: 6px;
-      text-transform: initial;
-      animation: from-top 2s ease;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .Inicio .Texto__Inicio {
+    width: 400px;
+    height: 180px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    text-transform: initial;
+    animation: from-top 2s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .Cupones-inicio{
-      width: 500px;
-      height: 250px;
-      padding: 10px;
+  .Inicio .Cupones-inicio {
+    width: 500px;
+    height: 250px;
+    padding: 10px;
   }
-  .Quienes{
+
+  .Quienes {
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-  
   }
-  .Texto__QS{
+  .Quienes .Img-QS {
+    width: 500px;
+    height: 500px;
+    animation: from-top 1.5s ease;
+  }
+  .Quienes .Texto__QS {
     width: 600px;
     height: 250px;
     padding: 10px;
@@ -457,14 +493,18 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Nvalores{
+
+  .Nvalores {
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
-  .Texto__valores{
+  .Nvalores .Texto__valores {
     width: 500px;
-    height: 200px;
+    height: 250px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 6px;
@@ -472,27 +512,28 @@ footer {
     text-transform: initial;
     animation: from-top 2s ease;
     color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: small;
   }
-  .Img-valores{
+  .Nvalores .Img-valores {
     width: 80px;
     height: 80px;
     margin-bottom: 12px;
   }
-  .Ingreso{
+
+  .Ingreso {
     height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .Form-ingreso{
+  .Ingreso .Form-ingreso {
     width: 700px;
     height: 230px;
     padding: 10px;
@@ -509,14 +550,15 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Registro{
+
+  .Registro {
     height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .Form-Registro{
+  .Registro .Form-Registro {
     width: 550px;
     height: 530px;
     padding: 10px;
@@ -531,20 +573,20 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .Funcion{
+
+  .Funcion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-  
   }
-  .Video{
+  .Funcion .Video {
     width: 270px;
     height: 420px;
     animation: from-right 1s ease;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .Texto-Funciones{
+  .Funcion .Texto-Funciones {
     width: 600px;
     height: 290px;
     padding: 10px;
@@ -559,7 +601,8 @@ footer {
     margin-top: 15px;
     margin-bottom: 25px;
   }
-  .Ayuda{
+
+  .Ayuda {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -567,7 +610,7 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .Texto__ayuda{
+  .Ayuda .Texto__ayuda {
     width: 600px;
     height: 230px;
     padding: 10px;
@@ -582,3 +625,5 @@ footer {
     font-size: small;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
