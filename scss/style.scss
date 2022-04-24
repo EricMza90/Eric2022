@@ -11,7 +11,7 @@ header{
           to top,
           rgba(0, 0, 0, 0.6),
           rgb(255, 255, 255));
-        height: 140px;
+        height: 125px;
         text-transform: uppercase;
         font-family: "Fredoka", sans-serif;
         text-decoration: none;
@@ -28,6 +28,12 @@ header{
             outline-color: rgb(0, 0, 0);
             text-shadow: 1px 1px 4px rgb(255, 255, 255);
             border-radius: 90px;
+          }
+          .navbar{  
+            background-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9),
+                rgb(255, 255, 255));
           }
     }
 .Inicio{
@@ -214,7 +220,7 @@ header{
         margin-bottom: 25px;
 
         .Texto__ayuda{
-            width: 380px;
+            width: 420px;
             height: 300px;
             padding: 10px;
             background-color: rgba(0, 0, 0, 0.8);
@@ -227,6 +233,7 @@ header{
             font-family: "Fredoka", sans-serif;
             margin-top: 10px;
             margin-bottom: 10px;
+            font-size: small;
           }
       }
       footer {
