@@ -1,5 +1,5 @@
 body {
-  background-image: url(./imagenes/fondo.png);
+  background-image: url(./imagenes/fondo.jpeg);
   background-size: cover;
   font-family: "Fredoka", sans-serif;
   background-repeat: no-repeat;
@@ -75,8 +75,8 @@ header .navbar {
   align-items: center;
 }
 .Quienes .Img-QS {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   animation: from-top 1.5s ease;
 }
 .Quienes .Texto__QS {
@@ -440,7 +440,7 @@ footer .Redes-Img {
 }
 @media (min-width: 1200px) {
   .Inicio {
-    height: 600px;
+    height: 650px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -477,8 +477,8 @@ footer .Redes-Img {
     justify-items: center;
   }
   .Quienes .Img-QS {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     animation: from-top 1.5s ease;
   }
   .Quienes .Texto__QS {
