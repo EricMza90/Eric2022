@@ -8,14 +8,13 @@ body {
 
 header {
   width: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgb(255, 255, 255));
   height: 125px;
   text-transform: uppercase;
   font-family: "Fredoka", sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-  color: black;
+  color: Black;
 }
 header nav ul li {
   padding: 8px;
@@ -28,7 +27,18 @@ header nav ul li:hover {
   border-radius: 90px;
 }
 header .navbar {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgb(255, 255, 255));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgb(255, 255, 255));
+}
+
+.Texto, .Ayuda .Texto--Ayuda, .Funcion .Texto--Funciones, .Nvalores .Texto--valores, .Quienes .Texto--QS, .Inicio .Texto--Inicio {
+  padding: 12px;
+  color: White;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
 }
 
 .Inicio {
@@ -36,21 +46,18 @@ header .navbar {
   flex-direction: column;
   align-items: center;
 }
+
 .Inicio .Img-inicio {
   width: 350px;
   height: 350px;
   animation: from-top 1.5s ease;
 }
-.Inicio .Texto__Inicio {
+.Inicio .Texto--Inicio {
   width: 350px;
   height: 160px;
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
   text-transform: initial;
   animation: from-top 1.5s ease;
-  color: white;
-  font-family: "Fredoka", sans-serif;
 }
 @keyframes from-top {
   0% {
@@ -79,16 +86,12 @@ header .navbar {
   height: 300px;
   animation: from-top 1.5s ease;
 }
-.Quienes .Texto__QS {
+.Quienes .Texto--QS {
   width: 350px;
   height: 330px;
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  font-family: "Fredoka", sans-serif;
   text-transform: initial;
   animation: from-top 2s ease;
-  color: white;
   margin-bottom: 30px;
 }
 
@@ -97,22 +100,14 @@ header .navbar {
   flex-direction: column;
   align-items: center;
 }
-.Nvalores .Texto__valores {
+.Nvalores .Texto--valores {
   width: 430px;
   height: 230px;
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 6px;
-  font-family: "Fredoka", sans-serif;
   text-transform: initial;
   animation: from-bottom 2s ease;
-  color: white;
   margin-top: 15px;
   margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 @keyframes from-bottom {
   0% {
@@ -146,7 +141,7 @@ header .navbar {
   font-family: "Fredoka", sans-serif;
   text-transform: initial;
   animation: from-top 2s ease;
-  color: white;
+  color: White;
   margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -171,7 +166,7 @@ header .navbar {
   font-family: "Fredoka", sans-serif;
   text-transform: initial;
   animation: from-top 2s ease;
-  color: white;
+  color: White;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,20 +185,13 @@ header .navbar {
   margin-top: 25px;
   margin-bottom: 15px;
 }
-.Funcion .Texto-Funciones {
-  width: 380px;
-  height: 380px;
-  padding: 10px;
+.Funcion .Texto--Funciones {
+  width: 340px;
+  height: 340px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Fredoka", sans-serif;
   margin-top: 15px;
   margin-bottom: 25px;
+  font-size: small;
 }
 
 .Ayuda {
@@ -213,18 +201,10 @@ header .navbar {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.Ayuda .Texto__ayuda {
+.Ayuda .Texto--Ayuda {
+  background-color: rgba(0, 0, 0, 0.8);
   width: 420px;
   height: 300px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Fredoka", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: small;
@@ -236,7 +216,7 @@ footer {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgb(255, 255, 255));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgb(255, 255, 255));
   height: 120px;
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
@@ -263,19 +243,12 @@ footer .Redes-Img {
     width: 400px;
     height: 400px;
   }
-  .Inicio .Texto__Inicio {
+  .Inicio .Texto--Inicio {
     width: 650px;
     height: 130px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .Inicio .Cupones-inicio {
     width: 700px;
@@ -293,21 +266,13 @@ footer .Redes-Img {
     height: 400px;
     animation: from-top 1.5s ease;
   }
-  .Quienes .Texto__QS {
+  .Quienes .Texto--QS {
     width: 700px;
     height: 210px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .Nvalores {
@@ -315,22 +280,14 @@ footer .Redes-Img {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-  .Nvalores .Texto__valores {
+  .Nvalores .Texto--valores {
     width: 400px;
     height: 230px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
     margin-top: 15px;
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: small;
   }
   .Nvalores .Img-valores {
@@ -355,7 +312,7 @@ footer .Redes-Img {
     font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
+    color: White;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -380,7 +337,7 @@ footer .Redes-Img {
     font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
+    color: White;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,20 +356,13 @@ footer .Redes-Img {
     margin-top: 25px;
     margin-bottom: 15px;
   }
-  .Funcion .Texto-Funciones {
+  .Funcion .Texto--Funciones {
     width: 800px;
-    height: 290px;
-    padding: 10px;
+    height: 240px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fredoka", sans-serif;
     margin-top: 15px;
     margin-bottom: 25px;
+    font-size: medium;
   }
 
   .Ayuda {
@@ -422,20 +372,13 @@ footer .Redes-Img {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .Ayuda .Texto__ayuda {
+  .Ayuda .Texto--Ayuda {
     width: 800px;
-    height: 300px;
-    padding: 10px;
+    height: 220px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fredoka", sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -450,19 +393,12 @@ footer .Redes-Img {
     width: 400px;
     height: 400px;
   }
-  .Inicio .Texto__Inicio {
+  .Inicio .Texto--Inicio {
     width: 400px;
     height: 180px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .Inicio .Cupones-inicio {
     width: 500px;
@@ -481,21 +417,13 @@ footer .Redes-Img {
     height: 400px;
     animation: from-top 1.5s ease;
   }
-  .Quienes .Texto__QS {
+  .Quienes .Texto--QS {
     width: 600px;
     height: 250px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .Nvalores {
@@ -506,22 +434,14 @@ footer .Redes-Img {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .Nvalores .Texto__valores {
+  .Nvalores .Texto--valores {
     width: 500px;
-    height: 250px;
-    padding: 10px;
+    height: 220px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 6px;
-    font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
     margin-top: 15px;
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: small;
   }
   .Nvalores .Img-valores {
@@ -546,7 +466,7 @@ footer .Redes-Img {
     font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
+    color: White;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -571,7 +491,7 @@ footer .Redes-Img {
     font-family: "Fredoka", sans-serif;
     text-transform: initial;
     animation: from-top 2s ease;
-    color: white;
+    color: White;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,18 +510,10 @@ footer .Redes-Img {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .Funcion .Texto-Funciones {
+  .Funcion .Texto--Funciones {
     width: 600px;
     height: 290px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fredoka", sans-serif;
     margin-top: 15px;
     margin-bottom: 25px;
   }
@@ -614,18 +526,10 @@ footer .Redes-Img {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .Ayuda .Texto__ayuda {
+  .Ayuda .Texto--Ayuda {
     width: 600px;
     height: 230px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Fredoka", sans-serif;
     font-size: small;
   }
 }

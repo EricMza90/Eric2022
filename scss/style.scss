@@ -1,26 +1,33 @@
+$Letra-principal: "Fredoka", sans-serif;
+$Color-Texto: rgba(0, 0, 0, 0.8);
+$Separacion: (
+  Small: 8px,
+  Medium: 10px,
+  Large: 12px);
+$Color-Letra:(
+  Color1: Black,
+  Color2: White,
+); 
+
 body{
     background-image: url(./imagenes/fondo.jpeg);
     background-size: cover;
-    font-family: "Fredoka", sans-serif;
+    font-family: $Letra-principal;
     background-repeat: no-repeat;
     overflow-x: hidden;
     }
 header{
         width: 100%;
-        background-image: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.6),
-          rgb(255, 255, 255));
         height: 125px;
         text-transform: uppercase;
-        font-family: "Fredoka", sans-serif;
+        font-family: $Letra-principal;
         text-decoration: none;
         font-weight: bold;
         font-size: 14px;
-        color: black;
+        color: map-get($Color-Letra, Color1 );
 
         nav ul li{
-            padding: 8px;
+            padding: map-get($Separacion, Small);
             transition: all 0.5s;
           }
           nav ul li:hover{
@@ -31,30 +38,43 @@ header{
           }
           .navbar{  
             background-image: linear-gradient(
-                to top,
-                rgba(0, 0, 0, 0.9),
+                to bottom,
+                rgb(0, 0, 0, 0.9),
                 rgb(255, 255, 255));
           }
     }
+.Texto{
+  padding: map-get($Separacion, Large );
+  color: map-get($Color-Letra, Color2 );
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $Letra-principal;
+}
+
+@mixin flex-colum-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .Inicio{
+    @include flex-colum-center;
+  }
 .Inicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         .Img-inicio{
             width: 350px;
             height: 350px;
             animation: from-top 1.5s ease;
           }
-          .Texto__Inicio{
+          .Texto--Inicio{
+              @extend .Texto;
               width: 350px;
               height: 160px;
-              padding: 10px;
-              background-color: rgba(0, 0, 0, 0.8);
-              border-radius: 6px;
+              background-color: $Color-Texto;
               text-transform: initial;
               animation: from-top 1.5s ease;
-              color: white;
-              font-family: "Fredoka", sans-serif;
           }
           @keyframes from-top {
             0% {
@@ -69,14 +89,12 @@ header{
           .Cupones-inicio{
             width: 395px;
             height: 210px;
-            padding: 10px;
+            padding: map-get($Separacion, Medium);
             animation: from-top 1s ;
         }
       }
       .Quienes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-colum-center;
 
         .Img-QS{
             width: 300px;
@@ -84,40 +102,28 @@ header{
             animation: from-top 1.5s ease;
           }
 
-        .Texto__QS{
+        .Texto--QS{
+            @extend .Texto;
             width: 350px;
             height: 330px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 6px;
-            font-family: "Fredoka", sans-serif;
+            background-color: $Color-Texto;
             text-transform: initial;
             animation: from-top 2s ease;
-            color: white;
             margin-bottom: 30px;
         }
       }
       .Nvalores{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+       @include flex-colum-center;
 
-        .Texto__valores{
+        .Texto--valores{
+            @extend .Texto;
             width: 430px;
             height: 230px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 6px;
-            font-family: "Fredoka", sans-serif;
+            background-color: $Color-Texto;
             text-transform: initial;
             animation: from-bottom 2s ease;
-            color: white;
             margin-top: 15px;
             margin-bottom: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
           }
           @keyframes from-bottom {
             0% {
@@ -146,13 +152,13 @@ header{
         .Form-ingreso{
             width: 350px;
             height: 230px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
+            padding: map-get($Separacion, Medium);
+            background-color: $Color-Texto;
             border-radius: 6px;
-            font-family: "Fredoka", sans-serif;
+            font-family: $Letra-principal;
             text-transform: initial;
             animation: from-top 2s ease;
-            color: white;
+            color: map-get($Color-Letra, Color2 );
             margin-top: 15px;
             margin-bottom: 15px;
             display: flex;
@@ -171,13 +177,13 @@ header{
         .Form-Registro{
             width: 380px;
             height: 530px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
+            padding: map-get($Separacion, Medium);
+            background-color: $Color-Texto;
             border-radius: 6px;
-            font-family: "Fredoka", sans-serif;
+            font-family: $Letra-principal;
             text-transform: initial;
             animation: from-top 2s ease;
-            color: white;
+            color: map-get($Color-Letra, Color2 );
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -185,9 +191,7 @@ header{
           }
       }
       .Funcion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-colum-center;
 
         .Video{
             width: 270px;
@@ -196,20 +200,14 @@ header{
             margin-top: 25px;
             margin-bottom: 15px;
           }
-          .Texto-Funciones{
-            width: 380px;
-            height: 380px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: "Fredoka", sans-serif;
+          .Texto--Funciones{
+            @extend .Texto;
+            width: 340px;
+            height: 340px;
+            background-color: $Color-Texto;
             margin-top: 15px;
             margin-bottom: 25px;
+            font-size: small;
           }
       }
       .Ayuda{
@@ -219,22 +217,15 @@ header{
         margin-top: 25px;
         margin-bottom: 25px;
 
-        .Texto__ayuda{
-            width: 420px;
-            height: 300px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            border-radius: 6px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: "Fredoka", sans-serif;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: small;
-          }
+        .Texto--Ayuda{
+          @extend .Texto;
+          background-color: $Color-Texto;
+          width: 420px;
+          height: 300px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: small;
+        }
       }
       footer {
         display: grid;
@@ -243,12 +234,12 @@ header{
         grid-template-columns: repeat(3, 1fr);  
         width: 100%;
         background-image: linear-gradient(
-          to bottom,
+          to top,
           rgba(0, 0, 0, 0.7),
           rgb(255, 255, 255)
         );
         height: 120px;
-        font-family: "Fredoka", sans-serif;
+        font-family: $Letra-principal;
         font-size: 14px;
 
         .Redes{
@@ -265,38 +256,28 @@ header{
       }
       @media (min-width: 768px){
         .Inicio{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-colum-center;
 
             .Img-inicio{
                 width: 400px;
                 height: 400px;
               }
-              .Texto__Inicio{
+              .Texto--Inicio{
+                  @extend .Texto;
                   width: 650px;
                   height: 130px;
-                  padding: 10px;
-                  background-color: rgba(0, 0, 0, 0.8);
-                  border-radius: 6px;
+                  background-color: $Color-Texto;
                   text-transform: initial;
                   animation: from-top 2s ease;
-                  color: white;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
               }
               .Cupones-inicio{
                   width: 700px;
                   height: 300px;
-                  padding: 10px;
+                  padding: map-get($Separacion, Medium);
               }
           }
           .Quienes{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+           @include flex-colum-center;
 
             .Img-QS{
                 width: 400px;
@@ -304,21 +285,14 @@ header{
                 animation: from-top 1.5s ease;
               }
 
-            .Texto__QS{
+            .Texto--QS{
+                @extend .Texto;
                 width: 700px;
                 height: 210px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
                 margin-bottom: 30px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
               }
           }
           .Nvalores{
@@ -326,22 +300,15 @@ header{
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
 
-            .Texto__valores{
+            .Texto--valores{
+                @extend .Texto;
                 width: 400px;
                 height: 230px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
                 margin-top: 15px;
                 margin-bottom: 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 font-size: small;
               }
               .Img-valores{
@@ -360,13 +327,13 @@ header{
             .Form-ingreso{
                 width: 700px;
                 height: 230px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
+                padding: map-get($Separacion, Medium);
+                background-color: $Color-Texto;
                 border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                font-family: $Letra-principal;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
+                color: map-get($Color-Letra, Color2 );
                 margin-top: 15px;
                 margin-bottom: 15px;
                 display: flex;
@@ -385,13 +352,13 @@ header{
             .Form-Registro{
                 width: 550px;
                 height: 530px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
+                padding: map-get($Separacion, Medium);
+                background-color: $Color-Texto;
                 border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                font-family: $Letra-principal;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
+                color: map-get($Color-Letra, Color2 );
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -399,9 +366,7 @@ header{
               }
           }
           .Funcion{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+           @include flex-colum-center;
 
             .Video{
                 width: 270px;
@@ -410,20 +375,14 @@ header{
                 margin-top: 25px;
                 margin-bottom: 15px;
               }
-              .Texto-Funciones{
+              .Texto--Funciones{
+                @extend .Texto;
                 width: 800px;
-                height: 290px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: white;
-                border-radius: 6px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: "Fredoka", sans-serif;
+                height: 240px;
+                background-color: $Color-Texto;
                 margin-top: 15px;
                 margin-bottom: 25px;
+                font-size: medium;
               }
           }
           .Ayuda{
@@ -433,20 +392,14 @@ header{
             margin-top: 25px;
             margin-bottom: 25px;
 
-            .Texto__ayuda{
+            .Texto--Ayuda{
+                @extend .Texto;
                 width: 800px;
-                height: 300px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: white;
-                border-radius: 6px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: "Fredoka", sans-serif;
+                height: 220px;
+                background-color: $Color-Texto;
                 margin-top: 10px;
                 margin-bottom: 10px;
+                font-size: 15px;
               }
           }
       }
@@ -462,24 +415,17 @@ header{
                 width: 400px;
                 height: 400px;
               }
-              .Texto__Inicio{
-                  width: 400px;
-                  height: 180px;
-                  padding: 10px;
-                  background-color: rgba(0, 0, 0, 0.8);
-                  border-radius: 6px;
-                  text-transform: initial;
-                  animation: from-top 2s ease;
-                  color: white;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
+            .Texto--Inicio{
+                width: 400px;
+                height: 180px;
+                background-color: $Color-Texto;
+                text-transform: initial;
+                animation: from-top 2s ease;
               }
               .Cupones-inicio{
                   width: 500px;
                   height: 250px;
-                  padding: 10px;
+                  padding: map-get($Separacion, Medium);
               }
         }
         .Quienes{
@@ -494,21 +440,13 @@ header{
                 animation: from-top 1.5s ease;
               }
 
-            .Texto__QS{
+            .Texto--QS{
                 width: 600px;
                 height: 250px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
                 margin-bottom: 30px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
               }
           }
           .Nvalores{
@@ -519,22 +457,14 @@ header{
             margin-top: 25px;
             margin-bottom: 25px;
 
-            .Texto__valores{
+            .Texto--valores{
                 width: 500px;
-                height: 250px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                height: 220px;
+                background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
                 margin-top: 15px;
                 margin-bottom: 15px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 font-size: small;
               }
               .Img-valores{
@@ -553,13 +483,13 @@ header{
             .Form-ingreso{
                 width: 700px;
                 height: 230px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
+                padding: map-get($Separacion, Medium);
+                background-color: $Color-Texto;
                 border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                font-family: $Letra-principal;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
+                color: map-get($Color-Letra, Color2 );
                 margin-top: 15px;
                 margin-bottom: 15px;
                 display: flex;
@@ -578,13 +508,13 @@ header{
             .Form-Registro{
                 width: 550px;
                 height: 530px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
+                padding: map-get($Separacion, Medium);
+                background-color: $Color-Texto;
                 border-radius: 6px;
-                font-family: "Fredoka", sans-serif;
+                font-family: $Letra-principal;
                 text-transform: initial;
                 animation: from-top 2s ease;
-                color: white;
+                color: map-get($Color-Letra, Color2 );
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -603,18 +533,10 @@ header{
                 margin-top: 50px;
                 margin-bottom: 50px;
               }
-              .Texto-Funciones{
+              .Texto--Funciones{
                 width: 600px;
                 height: 290px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: white;
-                border-radius: 6px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: "Fredoka", sans-serif;
+                background-color: $Color-Texto;
                 margin-top: 15px;
                 margin-bottom: 25px;
               }
@@ -627,18 +549,10 @@ header{
             margin-top: 30px;
             margin-bottom: 30px;
 
-            .Texto__ayuda{
+            .Texto--Ayuda{
                 width: 600px;
                 height: 230px;
-                padding: 10px;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: white;
-                border-radius: 6px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-family: "Fredoka", sans-serif;
+                background-color: $Color-Texto;
                 font-size: small;
               }
           }
