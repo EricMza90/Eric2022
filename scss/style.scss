@@ -196,10 +196,20 @@ header{
         .Video{
             width: 270px;
             height: 420px;
-            animation: from-right 1s ease;
+            animation: from-right 1.3s ease;
             margin-top: 25px;
             margin-bottom: 15px;
           }
+          @keyframes from-right {
+            0% {
+              opacity: 0;
+              transform: translateX(-90px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0px);
+            }
+          }  
           .Texto--Funciones{
             @extend .Texto;
             width: 340px;
@@ -208,7 +218,18 @@ header{
             margin-top: 15px;
             margin-bottom: 25px;
             font-size: small;
+            animation: from-left 1.3s ease;
           }
+          @keyframes from-left {
+            0% {
+              opacity: 0;
+              transform: translateX(90px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0px);
+            }
+          }  
       }
       .Ayuda{
         display: flex;
@@ -271,8 +292,8 @@ header{
                   animation: from-top 2s ease;
               }
               .Cupones-inicio{
-                  width: 700px;
-                  height: 300px;
+                  width: 670px;
+                  height: 250px;
                   padding: map-get($Separacion, Medium);
               }
           }
@@ -405,7 +426,7 @@ header{
       }
       @media (min-width: 1200px){
         .Inicio{
-            height: 650px;
+            height: 500px;
             display: grid;
             grid-template-columns:repeat(3, 1fr);
             grid-template-rows: 1fr;
@@ -429,7 +450,7 @@ header{
               }
         }
         .Quienes{
-            height: 600px;
+            height: 500px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
@@ -450,7 +471,7 @@ header{
               }
           }
           .Nvalores{
-            height: 600px;
+            height: 550px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;

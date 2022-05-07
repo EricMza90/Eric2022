@@ -181,9 +181,19 @@ header .navbar {
 .Funcion .Video {
   width: 270px;
   height: 420px;
-  animation: from-right 1s ease;
+  animation: from-right 1.3s ease;
   margin-top: 25px;
   margin-bottom: 15px;
+}
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .Funcion .Texto--Funciones {
   width: 340px;
@@ -192,6 +202,17 @@ header .navbar {
   margin-top: 15px;
   margin-bottom: 25px;
   font-size: small;
+  animation: from-left 1.3s ease;
+}
+@keyframes from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .Ayuda {
@@ -251,8 +272,8 @@ footer .Redes-Img {
     animation: from-top 2s ease;
   }
   .Inicio .Cupones-inicio {
-    width: 700px;
-    height: 300px;
+    width: 670px;
+    height: 250px;
     padding: 10px;
   }
 
@@ -383,7 +404,7 @@ footer .Redes-Img {
 }
 @media (min-width: 1200px) {
   .Inicio {
-    height: 650px;
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -407,7 +428,7 @@ footer .Redes-Img {
   }
 
   .Quienes {
-    height: 600px;
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -427,7 +448,7 @@ footer .Redes-Img {
   }
 
   .Nvalores {
-    height: 600px;
+    height: 550px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
