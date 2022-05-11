@@ -105,11 +105,12 @@ header{
         .Texto--QS{
             @extend .Texto;
             width: 350px;
-            height: 330px;
+            height: 250px;
             background-color: $Color-Texto;
             text-transform: initial;
             animation: from-top 2s ease;
             margin-bottom: 30px;
+            font-size: small;
         }
       }
       .Nvalores{
@@ -124,6 +125,7 @@ header{
             animation: from-bottom 2s ease;
             margin-top: 15px;
             margin-bottom: 15px;
+            font-size: small;
           }
           @keyframes from-bottom {
             0% {
@@ -159,12 +161,13 @@ header{
             text-transform: initial;
             animation: from-top 2s ease;
             color: map-get($Color-Letra, Color2 );
-            margin-top: 15px;
+            margin-top: 50px;
             margin-bottom: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: small;
           }
       }
       .Registro{
@@ -178,7 +181,7 @@ header{
 
         .Form-Registro{
             width: 350px;
-            height: 600px;
+            height: 570px;
             padding: map-get($Separacion, Medium);
             background-color: $Color-Texto;
             border-radius: 6px;
@@ -190,6 +193,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: small;
           }
       }
       .Funcion{
@@ -361,7 +365,7 @@ header{
                 text-transform: initial;
                 animation: from-top 2s ease;
                 color: map-get($Color-Letra, Color2 );
-                margin-top: 15px;
+                margin-top: 60px;
                 margin-bottom: 15px;
                 display: flex;
                 flex-direction: column;
@@ -422,12 +426,13 @@ header{
 
             .Texto--Ayuda{
                 @extend .Texto;
-                width: 800px;
-                height: 220px;
+                width: 700px;
+                height: 260px;
                 background-color: $Color-Texto;
                 margin-top: 10px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
                 font-size: 15px;
+                font-size: medium;
               }
           }
       }
@@ -437,6 +442,7 @@ header{
             grid-template-columns:repeat(3, 1fr);
             grid-template-rows: 1fr;
             align-items: center;
+            height: auto;
 
             .Img-inicio{
                 width: 400px;
@@ -459,6 +465,7 @@ header{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
+            height: auto;
 
             .Img-QS{
                 width: 400px;
@@ -490,7 +497,7 @@ header{
                 animation: from-top 2s ease;
                 margin-top: 15px;
                 margin-bottom: 15px;
-                font-size: small;
+                font-size: medium;
               }
               .Img-valores{
                 width: 80px;
@@ -503,6 +510,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: auto;
 
             .Form-ingreso{
                 width: 700px;
@@ -514,12 +522,13 @@ header{
                 text-transform: initial;
                 animation: from-top 2s ease;
                 color: map-get($Color-Letra, Color2 );
-                margin-top: 15px;
+                margin-top: 50px;
                 margin-bottom: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                font-size: medium;
               }
           }
           .Registro{
@@ -527,6 +536,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: auto;
 
             .Form-Registro{
                 width: 550px;
@@ -542,19 +552,19 @@ header{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                font-size: medium;
               }
           }
           .Funcion{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
+            height: auto;
 
             .Video{
                 width: 270px;
                 height: 420px;
                 animation: from-right 1s ease;
-                margin-top: 50px;
-                margin-bottom: 50px;
               }
               .Texto--Funciones{
                 width: 600px;
@@ -574,9 +584,9 @@ header{
 
             .Texto--Ayuda{
                 width: 600px;
-                height: 230px;
+                height: 280px;
                 background-color: $Color-Texto;
-                font-size: small;
+                font-size: medium;
               }
           }
       }
