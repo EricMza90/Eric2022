@@ -286,7 +286,7 @@ footer .Redes-Img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 840px;
+    height: auto;
     justify-content: center;
   }
   .Quienes .Img-QS {
@@ -331,7 +331,7 @@ footer .Redes-Img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 840px;
+    height: auto;
   }
   .Ingreso .Form-ingreso {
     width: 700px;
@@ -356,7 +356,7 @@ footer .Redes-Img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 840px;
+    height: auto;
   }
   .Registro .Form-Registro {
     width: 550px;
@@ -378,7 +378,7 @@ footer .Redes-Img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 840px;
+    height: auto;
   }
   .Funcion .Video {
     width: 270px;

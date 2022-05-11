@@ -305,7 +305,7 @@ header{
           }
           .Quienes{
            @include flex-colum-center;
-           height: 840px;
+           height: auto;
            justify-content: center;
 
             .Img-QS{
@@ -353,7 +353,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 840px;
+            height: auto;
 
             .Form-ingreso{
                 width: 700px;
@@ -378,7 +378,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 840px;
+            height: auto;
 
             .Form-Registro{
                 width: 550px;
@@ -398,7 +398,7 @@ header{
           }
           .Funcion{
            @include flex-colum-center;
-           height: 840px;
+           height: auto;
 
             .Video{
                 width: 270px;
