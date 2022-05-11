@@ -71,7 +71,7 @@ header{
           .Texto--Inicio{
               @extend .Texto;
               width: 350px;
-              height: 160px;
+              height: 180px;
               background-color: $Color-Texto;
               text-transform: initial;
               animation: from-top 1.5s ease;
@@ -87,7 +87,7 @@ header{
             }
           }
           .Cupones-inicio{
-            width: 395px;
+            width: 370px;
             height: 210px;
             padding: map-get($Separacion, Medium);
             animation: from-top 1s ;
@@ -117,8 +117,8 @@ header{
 
         .Texto--valores{
             @extend .Texto;
-            width: 430px;
-            height: 230px;
+            width: 350px;
+            height: 215px;
             background-color: $Color-Texto;
             text-transform: initial;
             animation: from-bottom 2s ease;
@@ -168,15 +168,17 @@ header{
           }
       }
       .Registro{
-        height: 700px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
 
         .Form-Registro{
-            width: 380px;
-            height: 530px;
+            width: 350px;
+            height: 600px;
             padding: map-get($Separacion, Medium);
             background-color: $Color-Texto;
             border-radius: 6px;
@@ -212,8 +214,8 @@ header{
           }  
           .Texto--Funciones{
             @extend .Texto;
-            width: 340px;
-            height: 340px;
+            width: 350px;
+            height: 300px;
             background-color: $Color-Texto;
             margin-top: 15px;
             margin-bottom: 25px;
@@ -241,8 +243,8 @@ header{
         .Texto--Ayuda{
           @extend .Texto;
           background-color: $Color-Texto;
-          width: 420px;
-          height: 300px;
+          width: 350px;
+          height: 250px;
           margin-top: 10px;
           margin-bottom: 10px;
           font-size: small;
@@ -293,44 +295,48 @@ header{
               }
               .Cupones-inicio{
                   width: 670px;
-                  height: 250px;
+                  height: 290px;
                   padding: map-get($Separacion, Medium);
               }
           }
           .Quienes{
            @include flex-colum-center;
+           height: 840px;
+           justify-content: center;
 
             .Img-QS{
                 width: 400px;
                 height: 400px;
                 animation: from-top 1.5s ease;
+                margin-bottom: 40px;
               }
 
             .Texto--QS{
                 @extend .Texto;
                 width: 700px;
-                height: 210px;
+                height: 220px;
                 background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
                 margin-bottom: 30px;
+                font-size: medium;
               }
           }
           .Nvalores{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             justify-items: center;
 
             .Texto--valores{
                 @extend .Texto;
-                width: 400px;
+                width: 700px;
                 height: 230px;
                 background-color: $Color-Texto;
                 text-transform: initial;
                 animation: from-top 2s ease;
                 margin-top: 15px;
                 margin-bottom: 15px;
-                font-size: small;
+                font-size: medium;
               }
               .Img-valores{
                 width: 80px;
@@ -343,6 +349,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 840px;
 
             .Form-ingreso{
                 width: 700px;
@@ -367,6 +374,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 840px;
 
             .Form-Registro{
                 width: 550px;
@@ -386,21 +394,22 @@ header{
           }
           .Funcion{
            @include flex-colum-center;
+           height: 840px;
 
             .Video{
                 width: 270px;
                 height: 420px;
                 animation: from-right 1s ease;
-                margin-top: 25px;
+                margin-top: 50px;
                 margin-bottom: 15px;
               }
               .Texto--Funciones{
                 @extend .Texto;
-                width: 800px;
+                width: 700px;
                 height: 240px;
                 background-color: $Color-Texto;
-                margin-top: 15px;
-                margin-bottom: 25px;
+                margin-top: 40px;
+                margin-bottom: 15px;
                 font-size: medium;
               }
           }
@@ -521,7 +530,7 @@ header{
 
             .Form-Registro{
                 width: 550px;
-                height: 530px;
+                height: 550px;
                 padding: map-get($Separacion, Medium);
                 background-color: $Color-Texto;
                 border-radius: 6px;
