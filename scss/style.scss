@@ -339,7 +339,6 @@ header{
               }
           }
           .Ingreso{
-            height: 660px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -364,7 +363,6 @@ header{
               }
           }
           .Registro{
-            height: 660px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -426,7 +424,6 @@ header{
       }
       @media (min-width: 1200px){
         .Inicio{
-            height: 500px;
             display: grid;
             grid-template-columns:repeat(3, 1fr);
             grid-template-rows: 1fr;
@@ -450,7 +447,6 @@ header{
               }
         }
         .Quienes{
-            height: 500px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
@@ -471,7 +467,6 @@ header{
               }
           }
           .Nvalores{
-            height: 550px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
@@ -495,7 +490,6 @@ header{
               }
           }
           .Ingreso{
-            height: 660px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -520,7 +514,6 @@ header{
               }
           }
           .Registro{
-            height: 660px;
             display: flex;
             flex-direction: column;
             align-items: center;

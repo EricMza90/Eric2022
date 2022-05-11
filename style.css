@@ -318,7 +318,6 @@ footer .Redes-Img {
   }
 
   .Ingreso {
-    height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -343,7 +342,6 @@ footer .Redes-Img {
   }
 
   .Registro {
-    height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,7 +402,6 @@ footer .Redes-Img {
 }
 @media (min-width: 1200px) {
   .Inicio {
-    height: 500px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -428,7 +425,6 @@ footer .Redes-Img {
   }
 
   .Quienes {
-    height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -448,7 +444,6 @@ footer .Redes-Img {
   }
 
   .Nvalores {
-    height: 550px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -472,7 +467,6 @@ footer .Redes-Img {
   }
 
   .Ingreso {
-    height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,7 +491,6 @@ footer .Redes-Img {
   }
 
   .Registro {
-    height: 660px;
     display: flex;
     flex-direction: column;
     align-items: center;
